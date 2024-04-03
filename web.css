@@ -99,7 +99,7 @@ table th{
 }
 @media(max-width: 900px){
 	.course_item{
-		width:48%;
+		width:45%;
 		margin:0 1% 0 1%;
 	}
 	#course_container{
