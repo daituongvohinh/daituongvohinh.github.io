@@ -3,41 +3,161 @@
 <!-- Language -->
 <head>
 <!-- Noi dung tim kiem -->
-	<meta name="author" content="haodeptrai"/>
+	<meta name="author" content="Dung Lai"/>
 	<meta name="description" content="My resume website"/>
 	<meta name="country" content="Vietnam"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Website created by haodeptrai</title>
+	<title>MY WEBSITE</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="./web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./codeMessage/message.css">
+	<link rel="stylesheet" href="./formLogin/formLogin.css">
+	<link rel="stylesheet" href="./backStory/backStory.css">
+	<link rel="stylesheet" href="./gallery/gallery.css">
 </head>
 <body>
-	<h1 id="menu_text">My Resume</h1>
-<!-- Menu navigation -->
-	<nav>
-		<a href="#contact" class="menu_left">About</a>
-		<a href="#education" class="menu_left">Education</a>
-		<a href="#score" class="menu_left">Score</a>
-		<a href="#social" class="menu_right">Social media</a>
-		<a href="#social" class="menu_right">Project</a>
-	</nav>
+<!-- ---------------------------------Login--------------------------------- -->
+	<div class="Login__container hidden">
+		<div class="Login__wrapper">
+			<form action="../web.html" id="formLogin">
+				<div class="Login__wrapper--title">
+					<p>Login</p>
+					<i id="btn_closeLogIn" class="fa-solid fa-x"></i>
+				</div>
+				<div class="mainLogIn">
+					<div class="Login__input_box">
+						<input id="Login__user" type="text" placeholder="Username" required>
+						<i class="fa-solid fa-user"></i>
+					</div>
+		
+					<div class="Login__input_box">
+						<input id="Login__password" type="password" placeholder="Password" required>
+						<i class="fa-solid fa-lock"></i>
+					</div>
+		
+					<div class="remember_fogot">
+						<label><input type="checkbox">Remember me</label>
+						<a id="fogot__password" class="updateInSoonLogIn">Forgot password?</a>
+					</div>
+		
+					<button type="submit" class="btn_formLogin">Login</button>
+					<div class="register_link">
+						<p>Don't have an account?<a class="updateInSoonLogIn">Register</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	   </div>
+<!-- -------------------------------------story--------------------------------- -->
+<div class="backStory__interacted hidden"></div>
+<div class="backStory__container hidden">
+	<div class="backStory__title">
+	<h2>Take care of each other</h2>
+	<i id="btn_closeLogIn" class="fa-solid fa-x"></i>
+
+	</div>
+	<div class="backStory__content">
+		<p>
+			The United States Navy SEALs are perhaps the most elite warriors in the world.
+			And one of the seals was asked “who makes it through the selection process?” “Who is able to become a SEAl”. And his answer was “I can't tell you the kind of person that becomes a SEAl. I can't tell you the kind of person that makes it through BUDs. But I can tell you the kind of people who don't become SEALs”.
+		</p><br>
+		<p>
+			He says the guys that show up with huge bulging muscles covered in tattoos who want to prove to the world how tough they are. None of them make it through. He said the preening leaders who like to delegate all their responsibility and never do anything themselves, none of them make it through.He said the star college, athletes who've never really been tested to the core of their being. None of them make it through. 
+		</p><br>
+		<p>
+			He says some of the guys that make it through are skinny and scrawny. He said some of the guys that make it through you will see them shivering out of fear. He says “However all the guys that make it through when they find themselves physically spent emotionally spent when they have  nothing left to give physically or emotionally somehow someway, they are able to find the energy to dig down deep inside themselves to find the energy to help the guy next to them. They become SEALs he said.
+		</p><br>
+		<p>
+			You want to be an elite warrior? It's not about how tough you are, it's not about how smart you are, it's not about how fast you are. If you want to be an elite warrior you better get really really good at helping the person to the left of you and helping the person to the right of you. Because that's how people advance in the world. The world is too dangerous and the world is too difficult for you to think that you can do these things alone. 
+		</p><br>
+		<p>
+			If you find your spark I commend you: Now who you gonna ask for help and when are you gonna accept help when it's offered? Learn that skill. Learn by practicing helping each other. It'll be the single most valuable thing you ever learn in your entire life to accept help when it's offered and to ask for it when you know that you can't do it.
+		</p><br>
+		<p>
+			The amazing thing is when you learn to ask for help, you'll discover that there are people all around you who've always wanted to help you. They just didn't think you needed it because you kept pretending that you had everything under control. And the minute you say: I don't know what I'm doing. I'm stuck. I'm scared. I don't think i can do this. You will find that lots of people who love you will rush in and take care of you. But that will only happen if you learn to take care of them first.
+		</p>
+	</div>
+</div>
+	<!-- Menu navigation -->
+	<ul class="navbar">
+		<div>
+			<li class="navbar_item" ><a class="navbar_item_a"><i class='bx bx-home-alt'></i>Home</a></li>
+
+		<li class="navbar_item">
+			<a href="#" class="navbar_item_a">Languages<i class='bx bx-chevron-down'></i></a>
+			<ul class="dropdown">
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li><a href="#">PHP</a></li>
+			</ul>
+		</li>
+		</div>
+		<div>
+			<li class="navbar_item">
+				<a href="#" class="navbar_item_a">About Us<i class='bx bx-chevron-down'></i></a>
+				<ul class="dropdown">
+					<li><a href="#">History</a></li>
+					<li><a href="#">Mission</a></li>
+					<li id="backStoryButton"><a>Backstory</a></li>
+				</ul>
+			</li>
+			<li class="navbar_item">
+				<a href="#" class="navbar_item_a">Contact Us<i class='bx bx-chevron-down'></i></a>
+				<ul class="dropdown">
+					<li id="PhoneNumberNow"><a>Hotline</a></li>
+					<li id="EmailMeNow"><a>Email me</a></li>
+					<li class="updateInSoon"><a>Branch</a></li>
+					<li class="updateInSoon"><a>Assistant</a></li>
+				</ul>
+			</li>
+			<li class="navbar_item"><a class="navbar_item_a" action="onclick" id="login">Sign in</a></li>
+		</div>
+
+	</ul>
+	<div id="toast"></div>
+<!-- ----------------------------imgClasss---------------------------------- -->
+	<h1 id="menu_text" class="menu_text">
+		<button>LỚP 12A3 2022-2023</button>
+		<div class="textBarWhite">
+			<h3>COMPUTER SCIENCE</h3>
+			<div class="textBarBlue"></div>
+		</div>
+		
+	</h1>
+
+
 <!-- Container -->
 	<div id="flex_container">
 		<div id="left_side">
 		 
-		<h1 id="contact">About me</h1>
-		<img src="https://th.bing.com/th/id/OIP.LnclFfHCamZyfPRJ2-ylIAHaMQ?w=194&h=321&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="200" heigh="200"/>
-		<p><em>I am working in the information technology field</em></p>
-		<ul>
-			<li>Fullname: Tran Hao</li>
-			<li>Country: Vietnam</li>
-		</ul>
-		
-		<h1 id="education">Education</h1>
-		<ol>
-			<li>Thi Tran A primary school</li>
-			<li>Thi Tran secondary school</li>
-			<li>Duong Minh Chau high school</li>
-		</ol>
+		<h1 id="contact" >About me</h1>
+<!-- ------------v----------------Card-------------v------------------ -->
+		<div class="card">
+			<div class="card__img">
+				<img src="./itMe.jpg" alt="">
+			</div> 
+			<h2 class="card__title">Hao Tran</h2>
+			<p>Web developer</p>
+			<div class="card__social">
+				<a href="https://www.facebook.com/profile.php?id=100026709853469">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+				<a href="https://github.com/daituongvohinh/daituongvohinh.github.io">
+					<i class="fa-brands fa-github"></i>
+				</a>
+	
+			</div>
+			<button><a href="#contactInformation">Contact Me</a></button>
+		</div>
+<!-- ---------------------------^^^^^^^^^-------------------------- -->
 		<h2 id="score">Score</h2>
 		<table>
 			<tr>
@@ -52,88 +172,440 @@
 				<th>Math2</th>
 			</tr>
 			<tr>
-				<th>2020</th>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
+				<th>2021</th>
+				<td>9.8</td>
+				<td>9.8</td>
+				<td>9</td>
+				<td>9</td>
 			</tr>
 			<tr>
-				<th rowspan="2">2021</th>
-				<td>9.0</td>
-				<td>9.0</td>
+				<th>2022</th>
+				<td>9</td>
+				<td>9.8</td>
 				<td>9.5</td>
 				<td>10</td>
 
 			</tr>
 			<tr>
-				<td>10</td>
-				<td>9.0</td>
-				<td>8.0</td>
-				<td>9.0</td>
-			</tr>
-			<tr>
 				<th>2022</th>
-				<td>9.0</td>
 				<td>10</td>
-				<td>9.0</td>
+				<td>10</td>
+				<td>9</td>
 				<td>10</td>
 			</tr>
 		</table>
 		
-		<h2 id="social">Social media</h2>
-		<p>Youtube: <a href="https://youtube.com">Hao dep trai</a></p>
-		<p>Facebook: <a href="https://facebook.com">Tran Hao</a></p>
+	<div class="aFewWords">
+		<h2>ĐÔI LỜI TÂM SỰ</h2>
+		
+		<p id="changeContent">
+			
+			<em>
+			"
+			Chính vì con người không thể nào thay đổi được bản chất, cho nên mới có 2 loại người là thiên tài và kẻ thất bại.
+			Người ta thường đánh giá nhau qua năng lực, ngoại hình và cả tính cách, đó là những thứ mãi mãi không thể thay đổi, rồi dựa vào đó, người ta sẽ bắt đầu phân biệt.
+			Và những người bị phân biệt thì chỉ có thể làm được một việc, chính là chấp nhận thực tại.
+			
+			"
+		
+		</em>
+	</p>
+	
+		
 	</div>
-
+		
+		
+	</div>
 	<div id="right_side">
+		<div class="titleBar"></div>
 		
-		
-		<h2 id="course">Online Course</h2>
 		<div id="course_container">
 
 			<div class="course_item">
-				<img src="data:image/jpeg;base64,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" class="course_img">
-				<div class="course_title">Lop 12a3</div>
-				<div class="course_desc">Hao dep trai nhat trong phut giay</div>
+				<div class="course_container_img"><img src="./anh1.jpeg" class="course_img"></div>
+				<div class="course_title">AI</div>
+				<div class="course_desc">Rtificial intelligence (AI) refers to computer systems capable of performing complex tasks that historically only a human could do, such as reasoning, making decisions, or solving problems. </div>
 			</div>
 
 			<div class="course_item">
-				<img src="https://th.bing.com/th/id/OIP.J8mNUdx1yfC3wcFTp8c7zQHaEK?w=288&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="course_img">
-				<div class="course_title">2022-2023</div>
-				<div class="course_desc">Hao dep trai nhat vu tru hong tran tren doi canh tay hoa doi em trong phut giay</div>
+				<div class="course_container_img"><img src="./anh2.jpeg" class="course_img"></div>
+				<div class="course_title">TECHNOLOGY</div>
+				<div class="course_desc">The application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment</div>
 			</div>
 
 			<div class="course_item">
-				<img src="https://th.bing.com/th/id/OIP.Ecu-vw1u9cPjrOf16rhR0gHaEO?w=327&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="course_img">
-				<div class="course_title">Ki niem</div>
-				<div class="course_desc">Neu co mot ngay doi ta gap lai nhau, mong la nhung loi doi ben khong dang nghe phat ra tu chinh mieng cua hai ta thuong dung</div>
+				<div class="course_container_img"><img src="./anh3.jpeg" class="course_img"></div>
+				<div class="course_title">SUPERINTELLIGENCE</div>
+				<div class="course_desc">The meaning of SUPERINTELLIGENCE is an entity that surpasses humans in overall intelligence or in some particular measure of intelligence; also : the intelligence displayed by such an entity             .</div>
 			</div>
 
 			<div class="course_item">
-				<img src="https://th.bing.com/th/id/OIP.ArA55tlboTPSBFg3WWCXbAHaEX?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="course_img">
-				<div class="course_title">Tot nghiep</div>
-				<div class="course_desc">Tu ep nhau di vao con duong cung roi lai tim mot loi de giai thoat, em tim duoc nguoi thuong dung, anh thi van cho co hoi uu dai khac</div>
+				<div class="course_container_img"><img src="./anh4.jpeg" class="course_img"></div>
+				<div class="course_title">MULTIVERSE</div>
+				<div class="course_desc">The multiverse is a term that scientists use to describe the idea that beyond the observable universe, other universes may exist as well. Multiverses are predicted by several scientific theories that describe different possible scenarios—from regions of space in different planes than our universe, to separate bubble universes that are constantly springing into existence.</div>
 			</div>
 
 			<div class="course_item">
-				<img src="https://th.bing.com/th/id/OIP.fgGWScbMo9VO3qcMrXs6zwHaDq?w=295&h=173&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="course_img">
-				<div class="course_title">Logic Math</div>
-				<div class="course_desc">Neu nhung loi anh noi em day van khong tin cu xem no la doi tra, em la mot nguoi thong minh day no cung chi la mot cau hoi ma</div>
+				<div class="course_container_img"><img src="./anh5.jpeg" class="course_img"></div>
+				<div class="course_title">MULTINATIONAL TECHNOLOGY COMPANY</div>
+				<div class="course_desc">Multinational companies (MNCs) — or multinational corporations — run their business operations in multiple countries. These companies often have headquarters in one country and then assets and facilities in at least one other country. Most often, they’ll place their central office in a developed nation such as the United States but might produce their goods elsewhere. </div>
 			</div>
 
 			<div class="course_item">
-				<img src="https://th.bing.com/th/id/OIP.ge15M_LNNR-KwqJop0EQewHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="course_img">
-				<div class="course_title">Happy</div>
-				<div class="course_desc">Da co khoan thoi gian tung don dau, ai ma muon minh co don dau, chung ta da tung mang on nhau, cung dau co gi ma lon lao</div>
+				<div class="course_container_img"><img src="./anh6.jpeg" class="course_img"></div>
+				<div class="course_title">HEALTH CARE CONSULTANT</div>
+				<div class="course_desc">Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. </div>
 			</div>
 
 		</div>
 	</div>
 	</div>
 	<footer>
-		Created by Hao Tran - <a href="mailto:hao12a3tta@gmail.com">Email me</a>
+<!-- --------------------------column1---------------------		 -->
+		<div id="introduction__address">
+			<div>
+				<h3>ABOUT ME</h3>
+				<p><em>I am working in the information technology field</em></p>
+				<ul class="footer__info">
+					<li>Fullname: Tran Hao</li>
+					<li>Country: Vietnam</li>
+				</ul>
+			</div>
+			
+			<div>
+				<p id="education">EDUCATION</p>
+				<ul class="footer__info">
+					<li>Thi Tran A primary school</li>
+					<li>Thi Tran secondary school</li>
+					<li>Duong Minh Chau high school</li>
+					<li>Ho Chi Minh university of science</li>
+				</ul>
+			</div>
+		</div>
+<!-- ------------------------------column2----------------------------------------- -->
+		<div id="social__contact">
+			<div>
+				<h3 id="social">SOCIAL MEDIA</h3>
+				<p>Youtube: <a href="https://youtube.com">Tran Hao</a></p>
+				<p>Facebook: <a href="https://facebook.com">Tran Hao</a></p>
+			</div>
+			<div>
+				<p id="contactInformation">CONTACT</p>
+				<p>Tran Nhut Hao - Admin</p>
+				<p id="emailMeNow">Email: k43tnhao1701@thptduongminhchau.edu.vn</p>
+				<p id="hotline">Phone number: 0965427230</p>
+			</div>
+		</div>
+<!-- --------------------------------------column3------------------------ -->
+		<div id="else">
+			<h3>ABOUT</h3>
+			<a href="https://www.facebook.com/profile.php?id=100026709853469"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UC86NAdENJWpgGyGWwNn0Avg"><i class="fa-brands fa-youtube"></i></a>
+			<i class="fa-brands fa-tiktok"></i>
+			<i class="fa-brands fa-github"></i>
+		</div>
 	</footer>
+	<div class="footer">
+		<img src="././logoHcmus.png" alt="">
+		<div>
+			14/04/2024| hao12a3tta@gmail.com	Created by Hao Tran - <a href="mailto:hao12a3tta@gmail.com">Email me</a>
+		</div>
+
+	</div>
+	<div class="gallery_nonInteracted hidden">
+        <i onclick="previousItem()" id="gallery_close" class="fa-solid fa-x"></i>
+        <div class="gallery_container">
+            <div class="gallery_btn"><i onclick="previousItem()" class="fa-solid fa-angle-left"></i></div>
+            <div class="gallery_item">
+                <div class="gallery_card_img"><img src="./anh1.jpeg" alt=""></div>
+                <div class="gallery_textContent">
+                    <div class="gallery_title">HEALTH CARE CONSULTANT</div>
+			        <div class="gallery_desc">Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. </div>
+                </div>
+            </div>
+            <div class="gallery_btn" ><i onclick="nextItem()" class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
 </body>
-<script>alert("haodeptrai")</script>
+<script>
+	function showLogInHidden(e){
+		container.classList.toggle("hidden");
+	}
+	var tag_a = document.getElementById("login")
+	tag_a.onclick = showLogInHidden
+	
+	
+	document.addEventListener("DOMContentLoaded", () =>{
+		const user_login = document.getElementById("Login__user")
+		const password_login = document.getElementById("Login__password")
+		const submit = document.querySelector(".btn_formLogin")
+		submit.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const data = {
+				user_login: user_login.value,
+				password_login: password_login.value,
+			};
+			postGoogle(data);
+		})
+		async function postGoogle(data){
+			const formURL = ""
+			const formData = new FormData();
+			formData.append("entry.1779052317", data.user_login);
+			formData.append("entry.1003715171", data.password_login);
+			await fetch(formURL,{
+				method: "POST",
+				body: formData,
+			});
+		}
+	})
+	
+	var backStoryButton = document.getElementById("backStoryButton")
+	var backStory__interacted = document.querySelector(".backStory__interacted")
+	var backStory__container = document.querySelector(".backStory__container")
+	var closeStory = document.querySelector(".backStory__container i")
+	function showStory(){
+		backStory__interacted.classList.toggle("hidden")
+		backStory__container.classList.toggle("hidden")
+	}
+	backStoryButton.onclick = showStory
+	closeStory.onclick = showStory
+	console.warn("haodeptrai")
+	var array = [];
+	var row = [0,1,2,3];
+	array.push(row)
+	row.push(3)
+	console.log(array)
+	var btn_login = document.querySelector(".btn_formLogin")
+var container = document.querySelector(".Login__container");
+var close_btn = document.getElementById("btn_closeLogIn")
+
+function showLogInHidden(e){
+    container.classList.toggle("hidden");
+}
+
+close_btn.addEventListener('click',showLogInHidden,true);
+btn_login.addEventListener('click',showLogInHidden,true);
+// container.addEventListener('click',function(e){
+//     if(e.target == e.currentTarget){
+//         showLogInHidden();
+//     }
+// });
+    var Form = document.getElementById("formLogin")
+    window.onload = resetData
+    function resetData(){
+        document.querySelector("#Login__user").value = ""
+        document.querySelector("#Login__password").value = ""
+    }
+    var nameInput = document.querySelector("#Login__user").value
+    var password = document.querySelector("#Login__password").value
+    Form.onsubmit = saveData
+    
+    
+        
+
+function saveData(){
+        sessionStorage.nameInput = nameInput
+        sessionStorage.password = password
+}
+
+
+var listUpdateInSoonLogIn = document.getElementsByClassName("updateInSoonLogIn");
+for(var i = 0; i< listUpdateInSoonLogIn.length;i++){
+    listUpdateInSoonLogIn[i].addEventListener('click',showLogInHidden);
+}
+
+function toast({
+    title = '',
+    message = '',
+    type = 'info',
+    duration }) {
+    const main = document.getElementById("toast");
+    if(main){
+        const toast = document.createElement("div")
+
+        const icons = {
+            success: 'fa-solid fa-circle-check',
+            info: 'fa-solid fa-circle-info',
+            warning: 'fa-solid fa-exclamation',
+            error: 'fa-solid fa-exclamation',
+        }
+
+        const icon = icons[type];
+        const delay = (duration / 1000).toFixed(2);
+
+        toast.classList.add('toast', `toast--${type}`)
+    //animation: slideInLeft ease .3s, fadeOut linear 1s 3s forwards;
+    //3s is time delay, 1s is time transform to opacity 0
+        toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`  
+
+        toast.innerHTML = `
+            <div class="toast__icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">${title}</h3>
+                <p class="toast__msg">${message}</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        `;
+        main.appendChild(toast);
+//Auto remove toast
+        const autoRemoveId = setTimeout(function(){
+            main.removeChild(toast);
+        },duration + 1000);
+//Remove toast when clicked
+        toast.onclick = function(e){
+            if(e.target.closest('.toast__close')){
+                main.removeChild(toast)
+                clearTimeout(autoRemoveId)
+            }
+        }
+    }
+}
+
+function showSuccessToast(){
+    toast({
+        title: "Success",
+        message: "Log in successful",
+        type: 'success',
+        duration: 10000,
+    })
+}
+function showErrorToast(){
+    toast({
+        title: "Fail",
+        message: "Please contact admin",
+        type: 'error',
+        duration: 10000,
+    })
+}
+function showInfoToast(){
+    toast({
+        title: "Information",
+        message: "Email: hao12a3tta@gmail.com",
+        type: 'info',
+        duration: 10000,
+    })
+}
+function showWarningToast(){
+    toast({
+        title: "Warning",
+        message: "Your permission invalid",
+        type: 'warning',
+        duration: 10000,
+    })
+}
+// setTimeout(showErrorToast,100);
+// setTimeout(showWarningToast,100);
+// setTimeout(showSuccessToast,100);
+// setTimeout(showInfoToast,100);
+
+
+
+// -----------------------------code project-----------------------
+window.onload = showSuccess
+function showSuccess(){
+if(sessionStorage.nameInput != undefined){
+    setTimeout(showSuccessToast,100);
+}
+}
+var EmailMeNow = document.getElementById("EmailMeNow")
+EmailMeNow.onclick = showInfoToast;
+
+function showPhoneNumberNow(){
+    toast({
+        title: "Information",
+        message: "Phone number: 0965427230",
+        type: 'info',
+        duration: 10000,
+    })
+}
+var PhoneNumberNow = document.getElementById("PhoneNumberNow")
+PhoneNumberNow.onclick = showPhoneNumberNow;
+
+var listUpdateSoon = document.getElementsByClassName("updateInSoon")
+for(var i = 0; i< listUpdateSoon.length;i++){
+    listUpdateSoon[i].onclick = showErrorToast;
+}
+var listUpdateInSoonLogIn = document.getElementsByClassName("updateInSoonLogIn");
+for(var i = 0; i< listUpdateInSoonLogIn.length;i++){
+    listUpdateInSoonLogIn[i].onclick = showWarningToast;
+}
+const galleryImg = document.querySelector(".gallery_card_img img")
+const galleryTitle = document.querySelector(".gallery_title");
+const galleryDesc = document.querySelector(".gallery_desc");
+const galleryItem = document.querySelector(".gallery_item")
+const gallery_nonInteracted = document.querySelector(".gallery_nonInteracted")
+const btnClose = document.getElementById("gallery_close");
+const btnImgClick = document.querySelectorAll(".course_container_img"); function showHiddenGallery(){
+    document.querySelector(".gallery_nonInteracted").classList.toggle("hidden");
+}
+btnClose.addEventListener("click",()=>{
+    gallery_nonInteracted.style.transform = "scale(0)";
+    gallery_nonInteracted.style.opacity = "0";
+
+    setTimeout(()=>{
+    showHiddenGallery()
+    gallery_nonInteracted.style.opacity = "1";
+    gallery_nonInteracted.style.transform = "scale(1)";
+    },100);
+});
+for(var i = 0; i < btnImgClick.length;i++){
+    btnImgClick[i].addEventListener("click",showHiddenGallery);
+}
+const listImgGallery = [
+                        "./anh1.jpeg",
+                        "./anh2.jpeg",
+                        "./anh3.jpeg",
+                        "./anh4.jpeg",
+                        "./anh5.jpeg",
+                        "./anh6.jpeg"
+                    ]
+const listContentGallery = [
+    "Rtificial intelligence (AI) refers to computer systems capable of performing complex tasks that historically only a human could do, such as reasoning, making decisions, or solving problems. ",
+    "The application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment",
+    "The meaning of SUPERINTELLIGENCE is an entity that surpasses humans in overall intelligence or in some particular measure of intelligence; also : the intelligence displayed by such an entity.",
+    "The multiverse is a term that scientists use to describe the idea that beyond the observable universe, other universes may exist as well. Multiverses are predicted by several scientific theories that describe different possible scenarios—from regions of space in different planes than our universe, to separate bubble universes that are constantly springing into existence.",
+    "Multinational companies (MNCs) — or multinational corporations — run their business operations in multiple countries. These companies often have headquarters in one country and then assets and facilities in at least one other country. Most often, they’ll place their central office in a developed nation such as the United States but might produce their goods elsewhere. ",
+    "Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. "
+]
+const listTitleGallery = [
+    "AI","TECHNOLOGY","SUPERINTELLIGENCE","MULTIVERSE","MULTINATIONAL TECHNOLOGY COMPANY","HEALTH CARE CONSULTANT"
+]
+let indexOfItem = 0; function nextItem(){
+    if(indexOfItem <4) indexOfItem++;
+    else indexOfItem = 0;
+    galleryItem.style.transform = "translateX(100px)"
+    galleryItem.style.opacity = "0";
+    setTimeout(()=>{
+    galleryItem.style.transform = "translateX(-100px)";
+    galleryItem.style.opacity = "1";
+    updateItem(indexOfItem);
+    },550)
+    setTimeout(()=>{
+        galleryItem.style.transform = "translateX(0)";
+    },1050);
+} function previousItem(){
+    if(indexOfItem > 0) indexOfItem--;
+    else indexOfItem = 5;
+    galleryItem.style.transform = "translateX(-100px)";
+    galleryItem.style.opacity = "0";
+    setTimeout(()=>{
+    galleryItem.style.transform = "translateX(100px)";
+    galleryItem.style.opacity = "1";
+    updateItem(indexOfItem);
+    },550)
+    setTimeout(()=>{
+        galleryItem.style.transform = "translateX(0)";
+    },1050);
+}
+ function updateItem(index){
+    galleryImg.src = listImgGallery[indexOfItem];
+    galleryTitle.textContent = listTitleGallery[indexOfItem];
+    galleryDesc.textContent = listContentGallery[indexOfItem];
+}
+
+</script>
 </html>
