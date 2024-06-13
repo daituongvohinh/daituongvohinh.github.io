@@ -76,7 +76,7 @@
 /* ---------------------Img and title------------------------- */
 #menu_text{
 	height: 300px;
-	background-image: url(./myClass.jpg);
+	background-image: url("./myClass.jpg");
 	background-size: cover;
 	background-clip: border-box;
 	display: flex;
